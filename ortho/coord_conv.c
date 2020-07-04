@@ -1,22 +1,28 @@
 
-/*
- * ==========
- * Orthodromy
- * ==========
- * version: 1.0
- * date: June 27, 2020
- *
- */
- 
-#include "stdafx.h"
+#include <stdlib.h> 
+#include <string.h>
+#include <ctype.h>
+
 #include "coord_conv.h"
 
 
-/*
-if the input string is given as a number then the function
-does not check its result over range 90/180 degrees
-because it is unknown what is that latitude or longitude
-*/
+/* ------------------------------------------------------------------------
+ * It converts geographical coordinate given as a string to double value.
+ * The value is positive for north and east hemisphere and negative for
+ * south and west one.
+
+ * In error case it returns: -9999.0f
+ *
+ * If the string has a prefix which specified a hemisphere the function
+ * check its result over range 90 degrees for latitude and 180 degrees
+ * for longitude.
+ *
+ * WARNING:
+ * If the input string is given as a number then the function does not check
+ * its result over range 90/180 degrees because it is unknown what is that 
+ * latitude or longitude
+ * ------------------------------------------------------------------------
+ */
 double coord_conv(const char* coordinate_string)
 {
 	/* the size of the buffer is maximum length of string */
@@ -25,7 +31,7 @@ double coord_conv(const char* coordinate_string)
 	int error_code = 0;
 	int hemisphere_sign = 0;
 
-	double result = -9999.0f;  /* set an error by default */
+	double result = -9999.0f; /* set an error by default */
 	double minutes = 0.0;
 	double frac = 0.0;
 	double whole = 0.0;
@@ -33,7 +39,7 @@ double coord_conv(const char* coordinate_string)
 	char* current = NULL;
 	char temp[BUF_SIZE] = {0}; 
 	char* buffer = NULL;
-	char degrees_string[32] = {0};	  /* The first buffet holds degrees */
+	char degrees_string[32] = {0}; /* The first buffet holds degrees */
 	char minutes_string[32] = {0}; /* The second buffer hold minutes */
 
 	strncpy(temp, coordinate_string, sizeof(temp));
