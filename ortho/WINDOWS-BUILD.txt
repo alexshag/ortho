@@ -1,0 +1,5 @@
+
+RUN UNDER WINDOWS
+=================
+nmake /f win.mak all
+

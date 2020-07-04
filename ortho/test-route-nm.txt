@@ -1,0 +1,20 @@
+// ============================
+// This is a comment
+// These data from www.caiga.ru
+// ============================
+
+ULLI,  N59 48.00, E030 15.80
+LAGET, N60 54.40, E034 30.90
+KUMEN, N64 17.00, E042 57.90
+MZ,    N65 50.40, E044 16.00
+RIGNI, N66 45.00, E043 45.82
+NRM,   N67 38.30, E053 06.68
+ULKAM, N69 45.90, E061 33.61
+USDA,  N71 25.90, E072 02.40
+
+//#LAGET, PULKOVO     
+//#KUMEN, DIKSON
+
+
+
+
