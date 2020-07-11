@@ -1,14 +1,8 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <math.h>
 
-/*
- * ==========
- * Orthodromy
- * ==========
- * version: 1.0
- * date: June 27, 2020
- *
- */
- 
-#include "stdafx.h"
 #include "orthodromy.h"
 
 /*

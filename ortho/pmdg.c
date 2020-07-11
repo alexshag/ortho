@@ -1,14 +1,6 @@
+#include <string.h>
+#include <stdio.h>
 
-/*
- * ==========
- * Orthodromy
- * ==========
- * version: 1.0
- * date: June 27, 2020
- *
- */
- 
-#include "stdafx.h"
 #include "orthodromy.h"
 #include "coord_conv.h"
 #include "wplist.h"

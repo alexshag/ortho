@@ -1,24 +1,16 @@
 
-/*
- * ==========
- * Orthodromy
- * ==========
- * version: 1.0
- * date: June 27, 2020
- *
- */
- 
-#include "stdafx.h"
+#include <stdio.h>
+
 #include "orthodromy.h"  /* common definitions */
-#include "wplist.h"             /* list of waypoints */
-#include "geo_inverse.h"  /* geodesic ploblems */
+#include "wplist.h"      /* list of waypoints */
+#include "geo_inverse.h" /* geodesic ploblems */
 
 /*
- The magnetic variation of the reference meridian
- --------------------------------------------------------------
- The list build by push_front() method holds waypoints 
- in the reverse order. The last point is placed at the head 
- of the list.
+The magnetic variation of the reference meridian
+--------------------------------------------------------------
+The list build by push_front() method holds waypoints 
+in the reverse order. The last point is placed at the head 
+of the list.
 */
 static double reference_magvar(const wplist* pList)
 {
@@ -27,23 +19,23 @@ static double reference_magvar(const wplist* pList)
 }
 
 /*
-=================================================
+===================================================================
 The subroutine should returns a meridian convergence to caller. 
 This value will be sum by caller.
 
 WARNING: The function is called in a loop
 
 Input:
-         wp_ini  the first point of the leg
-         wp_fin  the last point of the leg
-   conv_sum  the sum of convergence on legs before current
+wp_ini  the first point of the leg
+wp_fin  the last point of the leg
+conv_sum  the sum of convergence on legs before current
 ref_magvar  the magnetic variation on the reference meridian
 
 Output:
 convergence  meridian convergence (degrees)
-        distance  distance between points on  sphere (kilometres)
-          magvar  magnetic variation at the last point of the route
-=================================================
+distance  distance between points on  sphere (kilometres)
+magvar  magnetic variation at the last point of the route
+====================================================================
  */
 static void route_leg(const waypoint* wp_ini, const waypoint* wp_fin,
 	const double conv_sum, const double ref_magvar,
@@ -56,7 +48,7 @@ static void route_leg(const waypoint* wp_ini, const waypoint* wp_fin,
 	---------------------------------------------------------------
 	az1 initial true angle of orthodromy 
 	az2 final true angle of orthodromy 
-	    s  orthodromic distance between the points on sphere
+	s  orthodromic distance between the points on sphere
 	*/
 	geo_inverse_sphere(
 		wp_ini->lat, wp_ini->lon,

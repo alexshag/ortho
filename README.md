@@ -22,10 +22,10 @@ a separate article.  You can also find examples of using this program.
 ## License
 
 This program is distributed completely freely under GPL3 License. You can change
- it as you want. This program can be compiled for both Windows and Linux. It is 
- checked and tested for both operating systems. I carefully checked the program 
- code. However, some errors are probably present. I would be grateful for your 
- help in detecting and correcting them.
+it as you want. This program can be compiled for both Windows and Linux. It is 
+checked and tested for both operating systems. I carefully checked the program 
+code. However, some errors are probably present. I would be grateful for your 
+help in detecting and correcting them.
 
 ## Input and Output
 
@@ -38,8 +38,8 @@ And this is an example of route file
 ![test-route](test-route.png)
 
 This file consists coordinates of waypoints which may be taken from the PMDG
- navigation database or from other air navigation sources (for example 
- enroute maps). 
+navigation database or from other air navigation sources (for example 
+enroute maps). 
 
 The program calculates orthodromic courses (grid courses) for given route and 
 orthodromic distance (great circle distance) between waypoints of the route. 
@@ -52,7 +52,8 @@ For each route leg the program displays the next values:
  - convergence of geographic (true) meridians;
  - the sum of convergeces;
  - grivation of the leg;
- - grid course;
+ - grid course (at the initial point);
  - magnetic course.
 
- Total
+Also total distance and total accumulative grivation are displayed. 
+

@@ -1,14 +1,6 @@
-
-/*
- * ==========
- * Orthodromy
- * ==========
- * version: 1.0
- * date: June 27, 2020
- *
- */
- 
-#include "stdafx.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 #include "magmodel.h"
 
 

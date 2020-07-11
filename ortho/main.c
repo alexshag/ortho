@@ -1,14 +1,9 @@
 
-/*
- * ==========
- * Orthodromy
- * ==========
- * version: 1.0
- * date: June 27, 2020
- *
- */
- 
-#include "stdafx.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
 #include "getopt.h"      /* cmdline opt */
 #include "orthodromy.h"  /* globals     */
 #include "wplist.h"      /* waypoints   */
@@ -107,17 +102,7 @@ int main(int argc, char* argv[])
 	wplist_reverse(&pList);
 	print_waypoint(pList);
 	calculate(pList);
-
-	
-	/*
-	printf("\n\n$$$$$$$$$$$$$$$$$$$$$\n\n");
-	wplist_reverse(&pList);
-	calculate(pList);
-	*/
-
 	wplist_free(&pList);
-
-	/*_CrtDumpMemoryLeaks();*/
 	
 	exit(EXIT_SUCCESS);
 }
@@ -131,7 +116,8 @@ static int parse_with_flag(const char* str, int flag, wplist** ppList)
 	{
 	case 0:
 	case 1:
-		res = parse_magvar(str, ppList);
+		/* not used in the version */
+		/*res = parse_magvar(str, ppList);*/
 		break;
 
 	case 2:

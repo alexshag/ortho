@@ -1,14 +1,8 @@
 
-/*
- * ==========
- * Orthodromy
- * ==========
- * version: 1.0
- * date: June 27, 2020
- *
- */
- 
-#include "stdafx.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
 #include "wplist.h"
 
 
@@ -70,20 +64,20 @@ void wplist_free(wplist** head)
 		/* Using uninitialized memory '**head' */
 		while ((*head)->next)
 		{
-			prev = (*head);
-			(*head) = (*head)->next;
-			free(prev);
+				prev = (*head);
+				(*head) = (*head)->next;
+				free(prev);
 		}
 		free(*head);
 }
 
 void wplist_print(const wplist* head)
 {
-	while (head)
-	{
-		printf("%s\n", head->value.code);
-		head = head->next;
-	}
+		while (head)
+		{
+				printf("%s\n", head->value.code);
+				head = head->next;
+		}
 }
 
 

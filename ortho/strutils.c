@@ -1,15 +1,6 @@
 
-/*
- * ==========
- * Orthodromy
- * ==========
- * version: 1.0
- * date: June 27, 2020
- *
- */
- 
-
-#include "stdafx.h"
+#include <ctype.h>
+#include <string.h>
 #include "strutils.h"
 
 /*
