@@ -52,6 +52,7 @@ Also total distance and total accumulative grivation are displayed.
 Some special terms and definitions are used here. For example: 
 
 *Grivation* (or grid variation) is an angle between grid north and magnetic north.
+
 *Grid course* (or orthodromic course) is an angle between the north direction of reference meridian and desired track. 
 
 Other terms can be found  at separated article.
