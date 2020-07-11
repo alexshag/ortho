@@ -19,14 +19,6 @@ This README file contains only basic information about the program.
 The theoretical and mathematical foundations of this program are described in 
 a separate article.  You can also find examples of using this program.
 
-## License
-
-This program is distributed completely freely under GPL3 License. You can change
-it as you want. This program can be compiled for both Windows and Linux. It is 
-checked and tested for both operating systems. I carefully checked the program 
-code. However, some errors are probably present. I would be grateful for your 
-help in detecting and correcting them.
-
 ## Input and Output
 
 An example of launch the program is presented on the screenshot below
@@ -52,8 +44,24 @@ For each route leg the program displays the next values:
  - convergence of geographic (true) meridians;
  - the sum of convergeces;
  - grivation of the leg;
- - grid course (at the initial point);
+ - grid course;
  - magnetic course.
 
 Also total distance and total accumulative grivation are displayed. 
+
+Some special terms and definitions are used here. For example: 
+
+*Grivation* (or grid variation) is an angle between grid north and magnetic north.
+*Grid course* (or orthodromic course) is an angle between the north direction of reference meridian and desired track. 
+
+Other terms can be found  at separated article.
+
+## License
+
+This program is distributed completely freely under GPL3 License. You can change
+it as you want. This program can be compiled for both Windows and Linux. It is 
+checked and tested for both operating systems. I carefully checked the program 
+code. However, some errors are probably present. I would be grateful for your 
+help in detecting and correcting them.
+
 
