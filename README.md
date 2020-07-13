@@ -46,7 +46,7 @@ For each route leg the program displays the next values:
  7. grid course;
  8. magnetic course.
 
-![test-route](ortho-desc.png)
+![ortho-desc](ortho-desc.png)
 
 Also total distance and total accumulative grivation are displayed. 
 
