@@ -37,15 +37,16 @@ The program calculates orthodromic courses (grid courses) for given route and
 orthodromic distance (great circle distance) between waypoints of the route. 
 For each route leg the program displays the next values: 
 
- - names of initial and final leg's waypoints;
- - initial true course;
- - final true course;
- - orthodromic distance;
- - convergence of geographic (true) meridians;
- - the sum of convergeces;
- - grivation of the leg;
- - grid course;
- - magnetic course.
+ 1. initial true course;
+ 2. final true course;
+ 3. orthodromic distance;
+ 4. convergence of geographic (true) meridians;
+ 5. the sum of convergeces;
+ 6. grivation of the leg;
+ 7. grid course;
+ 8. magnetic course.
+
+![test-route](ortho-desc.png)
 
 Also total distance and total accumulative grivation are displayed. 
 
