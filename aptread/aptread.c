@@ -1,7 +1,7 @@
 
 /*
- * The program search given airport in 'wpnavapt.txt' file 
- * and display the airport's runway data.
+ * This program searches for the specified airport in 
+ * the 'wpnavapt.txt' file and displays the airport runway data.
  */
 
 #define _CRT_SECURE_NO_WARNINGS
