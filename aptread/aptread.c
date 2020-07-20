@@ -1,5 +1,8 @@
 
-/**/
+/*
+ * The program search given airport in 'wpnavapt.txt' file 
+ * and display the airport's runway data.
+ */
 
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -104,30 +107,6 @@ void parse_string(const char* buffer, const char* search)
 
 	if (strcasecmp(code, search) == 0)
 	{
-		/*
-		printf("%s|", name);
-		printf("%s|", code);
-		printf("%s|", rwy);
-		printf("%s|", len);
-		printf("%s|", num);
-		printf("%.6f|", lat);
-		printf("%.6f|", lon);
-		printf("%s|", ils);
-		printf("%s|", hdg);
-		printf("%.0f\n", alt);
-		*/
-/*
-		printf("%s\t", name);
-		printf("%s\t", code);
-		printf("%s\t", rwy);
-		printf("%s\t", len);
-		printf("%s\t", num);
-		printf("%.6f\t", lat);
-		printf("%.6f\t", lon);
-		printf("%s\t", ils);
-		printf("%s\t", hdg);
-		printf("%.0f\n", alt);
-*/
 			printf("%s ", name);
 			printf("%s ", code);
 			printf("%s ", rwy);
