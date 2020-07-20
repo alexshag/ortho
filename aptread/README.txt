@@ -7,11 +7,11 @@ What is it?
 -----------
 
 There is 'wpnavapt.txt' file that hold airport's data in PMDG format. 
-It has more than 33 thousand records.   
- 
-If you have an installation of PMDG product the file is placed in 'NavData'
-folder. It is likely to have some tool for searching airport's data if such
-huge database without open it directly.
+It has more than 33 thousand records. This file is protected by copyright 
+and cannot be distributed freely. However, if you have an installation 
+of PMDG product the file is placed in 'NavData' folder. It is desirable 
+to have some kind of tool to search for data in such a huge database 
+without having to open it directly.
 
 The program search any given airport in the file and display these data.
 
@@ -25,6 +25,7 @@ What is format of the file?
 
 Here is the description of 'wpnavapt.txt' file.
 All positions are represented in characters.
+
 Start Length Description
 
  0 25 Airport name  
