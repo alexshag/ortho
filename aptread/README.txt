@@ -40,3 +40,23 @@ Start Length Description
 67  3 ILS magnetic heading
 70  5 Rwy threshold altitude (ft)
 
+Restrictions imposed by copyright
+---------------------------------
+
+Next files are included in Navigraph database (www.navigraph.com)
+
+airports.txt
+cycle_info.txt
+fmc_ident.txt
+wpNavAID.txt
+wpNavAPT.txt
+wpNavFIX.txt
+wpNavRTE.txt
+
+Source data are copyright by Jeppesen (https://ww2.jeppesen.com).
+
+This data may be used for ground based recreational computer game
+simulation software only, and may not be recompiled, interpreted,
+or distributed for any purpose without the written consent of Navigraph.
+The contents of this database is dated and must not be used for real
+world navigation as it is unlawful and unsafe to do so.
