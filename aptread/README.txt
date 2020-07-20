@@ -13,7 +13,8 @@ of PMDG product the file is placed in 'NavData' folder. It is desirable
 to have some kind of tool to search for data in such a huge database 
 without having to open it directly.
 
-The program search any given airport in the file and display these data.
+This program searches for the specified airport in the 'wpnavapt.txt' file 
+and displays the airport runway data.
 
 How to use?
 -----------
